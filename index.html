@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: pink;
+        border: 10px solid rgba(130, 3, 147, 0.682);
+      }
+      header {
+        background-color: rgb(252, 84, 201);
+      }
+      nav {
+        padding: 10px;
+      }
+      .mainUl {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        padding: 10px;
+        list-style-type: none;
+      }
+      .mainUl li:nth-child(3) {
+        position: relative;
+      }
+      .mainUl li:nth-child(3) img {
+        margin-top: 10px;
+        position: absolute;
+        right: -6px;
+      }
+      .mainUl li:nth-child(3):hover .dropDown {
+        display: block;
+      }
+
+      a {
+        color: rgb(247, 250, 247);
+        font-size: 2rem;
+        text-decoration: none;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        padding: 7px 20px;
+        border-radius: 10px;
+      }
+      a:hover {
+        background-color: rgba(255, 255, 255, 0.306);
+      }
+      .dropDown {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: rgb(199, 96, 222);
+        width: 150%;
+        list-style: none;
+        display: none;
+        border-radius: 5%;
+      }
+      .dropDown li a {
+        /* border: 2px solid rgb(255, 0, 149); */
+        display: block;
+        font-size: 1.3rem;
+      }
+      .next{
+        color: black;
+        align-items: center;
+        font-size: 2rem;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        background-image: url(images.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        padding: 10%;
+        margin: 100px;
+        margin-left: 450px;
+        box-shadow: 0 0 20px purple;
+      }
+      @media (min-width: 300px) and (max-width: 1000px) {
+        .mainUl {
+          flex-direction: column;
+        }
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DROP DOWN</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="mainUl">
+          <li><a href="#">File...</a></li>
+          <li><a href="#">Edit...</a></li>
+          <li>
+            <a href="#"
+              >Selection.....
+              <img src="pngwing.com (1).png" alt="" width="30px"
+            /></a>
+            <ul class="dropDown">
+              <li><a href="#">Option 1</a></li>
+              <li><a href="#">Option 2</a></li>
+              <li><a href="#">Option 3</a></li>
+              <li><a href="#">Option 4</a></li>
+              <li><a href="#">Option 5</a></li>
+
+              <li><a href="#">Option 6</a></li>
+              <li><a href="#">Option 7</a></li>
+              <li><a href="#">Option 8</a></li>
+              <li><a href="#">Option 9</a></li>
+              <li><a href="#">Option 10</a></li>
+            </ul>
+          </li>
+          <li><a href="#">View...</a></li>
+          <li><a href="#">Go...</a></li>
+          <li><a href="#">Run...</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div></div>
+    <br>
+    <br>
+    <a href="work1.html" class="next">here is a card one </a>
+  </body>
+</html>
